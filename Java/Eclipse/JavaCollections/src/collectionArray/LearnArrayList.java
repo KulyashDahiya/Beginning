@@ -6,14 +6,17 @@ public class LearnArrayList {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//		String[] studentsName = new String[31];
-//		studentsName[30] = "KulyashDahiya";
-//		System.out.println(studentsName[30]);
+		ArrayList<Integer> list = new ArrayList<>();
+		list.add(1);
+		list.add(2);
+		list.add(3);
+		System.out.println(list);
 		
-		ArrayList<String> studentsName = new ArrayList<>();
-		studentsName.add("Yash");
+		list.add(5); //this will add 5 at the end
+		System.out.println(list);
 		
-		
+		list.add(1, 50);
+		System.out.println(list);
 		
 	}
 
