@@ -17,6 +17,7 @@ public class LearnArrayList {
 		
 		list.add(1, 50);
 		System.out.println(list);
+		System.out.println("A little change");
 		
 	}
 
