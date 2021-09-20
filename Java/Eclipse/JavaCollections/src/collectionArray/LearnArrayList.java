@@ -17,7 +17,9 @@ public class LearnArrayList {
 		
 		list.add(1, 50);
 		System.out.println(list);
-		System.out.println("A little change from Linux now");
+		
+		System.out.println(list.get(1));
+		
 		
 	}
 
