@@ -5,8 +5,6 @@ void print(int num){
     return;
 }
 int Add(int num1,int num2){
-    print(num1);
-    print(num2);
     int sum=num1 + num2;
     return sum;
 }
