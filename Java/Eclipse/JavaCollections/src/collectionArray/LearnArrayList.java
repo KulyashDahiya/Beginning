@@ -31,6 +31,18 @@ public class LearnArrayList {
 		System.out.println(list.contains(5));
 		System.out.println(list);
 		
+		for(int i = 0; i<list.size(); i++)
+		{
+			System.out.println("The element is: " + list.get(i));
+		}
+		
+		for (Integer el : list)
+		{
+			System.out.println("foreach element: " + el);
+		}
+		
+		
+		
 //		System.out.println(list.get(5));
 //		list.remove(1);
 //		System.out.println(list);
