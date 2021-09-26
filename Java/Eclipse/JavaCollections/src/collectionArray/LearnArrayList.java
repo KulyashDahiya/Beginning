@@ -1,6 +1,6 @@
 package collectionArray;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class LearnArrayList {
 	
@@ -40,6 +40,14 @@ public class LearnArrayList {
 		{
 			System.out.println("foreach element: " + el);
 		}
+		
+		Iterator<Integer> it = list.iterator();
+		
+		while(it.hasNext())
+		{
+			System.out.println("Iterator: " + it.next());
+		}
+		
 		
 		
 		
