@@ -16,6 +16,7 @@ public class LearnStack {
 		System.out.println(animals.peek());
 		animals.pop();
 		System.out.println(animals.peek());
+		
 
 	}
 
