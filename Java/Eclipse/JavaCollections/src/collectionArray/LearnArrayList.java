@@ -21,19 +21,23 @@ public class LearnArrayList {
 		System.out.println(list.get(1));
 		
 		ArrayList<Integer> newList = new ArrayList<>();
-		newList.add(150);
+		newList.add(150);	
 		newList.add(160);
 		
 		list.addAll(newList);
 		System.out.println(list);
 		
-		System.out.println(list.get(5));
-		list.remove(1);
+		list.set(3, 1000);
+		System.out.println(list.contains(5));
 		System.out.println(list);
-		list.remove(Integer.valueOf(150));
-		System.out.println(list);
-		list.clear();
-		System.out.println(list);
+		
+//		System.out.println(list.get(5));
+//		list.remove(1);
+//		System.out.println(list);
+//		list.remove(Integer.valueOf(150));
+//		System.out.println(list);
+//		list.clear();
+//		System.out.println(list);
 		
 		
 		
