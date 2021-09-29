@@ -38,6 +38,7 @@ public class LearnTreeSet {
 		set.clear();
 
 		System.out.println(set.size());
+		//KEEP HUSTLING KEEP SMILING
 	}
 
 }
