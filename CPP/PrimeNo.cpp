@@ -7,7 +7,7 @@ int main(){
     bool flag=0;
     for (int i=2; i<=sqrt(n); i++){
         if(n%i==0){
-            cout<<"non prime"<<endl;
+            cout<<"Non Prime"<<endl;
             flag=1;
             break;
         }

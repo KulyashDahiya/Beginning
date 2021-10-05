@@ -16,6 +16,6 @@ int main()
     int n;
     cout<<"Enter N: "<<endl;
     cin>>n;
-    cout<<"Value of "<<n<<"th Fibonacci is"<<getFib(n)<<endl;
+    cout<<"Value of "<<n<<"th Fibonacci is "<<getFib(n)<<endl;
     return 0;
 }
