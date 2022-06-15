@@ -76,8 +76,82 @@ void explainVector() {
     //{10,20}
     v.pop_back(); //{10}
 
-    
+    // v1 -> {10,20}
+    // v2 -> {30,40}
+    v1.swap(v2); // // v1 -> {30,40} , v2 -> {10,20}
 
+    v1.clear(); // erases the entire vector
+
+    cout << v.empty();  // True or False
+
+}
+
+void explainList() {
+    list<int> ls;
+
+    ls.push_back(2);
+    ls.emplace_back(4);
+
+    ls.push_front(5);
+    ls.emplace_front(); //{2,4}
+
+    //rest functions are same as vector
+    // begin, rbegin, rend, clear, insert, size, swap
+}
+
+void explainDeque(){
+    deque<int>dq;
+    dq.push_back(1); //{1};
+    dq.emplace_back(2) //{1,2}
+    dq.push_front(4); //{4,1,2}
+    dq.emplace_front(3); //{3,4,1,2}
+
+    dq.pop_back(); //{3,4,1}
+    dq.pop_front(); //{4,1}
+
+    dq.back();
+    dq.front();
+
+    //rest functions are same as vector
+    // begin, rbegin, rend, clear, insert, size, swap
+}
+
+void explainStack() {   //LIFO
+    stack<int> st;
+    st.push(1); //{1} 
+    st.push(2); //{2,1} 
+    st.push(3); //{3,2,1} 
+    st.push(3); //{3,3,2,1} 
+    st.emplace(5); //{5,3,3,2,1} 
+    cout << st.top(); // prints 5 "** st[2] is invalid **"
+    
+    st.pop(); // st looks like {3,3,2,1}
+    
+    cout << st.top(); //3
+    cout << st.size(); //4
+    cout << st.empty();
+
+    stack<int> st1, st2;
+    st1.swap(st2);
+
+}
+
+void explainQueue() {  //FIFO
+    queue<int>  q;
+    q.push(1); //{1}
+    q.push(2); //{1,2}
+    q.emplace(4); //{1,2,4}
+
+    q.back() += 5;
+    cout << q.back(); //prints 9
+
+    //Q is {1,2,9}
+    cout << q.front(); //prints 1
+
+    q.pop(); //{2,9}
+    cout << q.front(); // prints 2
+
+    //size swap empty same as stack
 }
 
 int main(){
