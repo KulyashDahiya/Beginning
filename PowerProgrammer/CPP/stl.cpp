@@ -28,6 +28,8 @@ void explainVector() {
     vector<int> v3(5,20);
     vector<int> v4(v3);
 
+    //Iterator function
+
     vector<int>::iterator it = v.begin();
     it++;
     cout << *(it) << " ";
@@ -56,6 +58,23 @@ void explainVector() {
     for (auto it : v) {
         cout << it << " ";
     }
+
+    //{10,20,12,23} Erase Function
+    v.erase(v.begin()+1); //{10,12,23}
+
+    //Insert Function
+    vector<int>v(2,100); //{100,100}
+    v.insert(v.begin(), 300); //{300,100,100}
+    v.insert(v.begin()+1, 2, 10); //{300,10,10,100,100}
+
+    vector<int> copy(2, 50); //{50,50}
+    v.insert(v.begin(), copy.begin(), copy.end()); //{50,50,300,10,10,100,100}
+
+    //{10,20}
+    v.size(); // 2
+
+    //{10,20}
+    v.pop_back(); //{10}
 
     
 
