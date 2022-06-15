@@ -154,8 +154,10 @@ void explainQueue() {  //FIFO
     //size swap empty same as stack
 }
 
-void explainPQ() { 
-    queue<int>  pq;
+void explainPQ() {   //Max Heap
+    // TC -   push log(n),  pop log(n), top O(1)
+
+    priority_queue<int>  pq;
     pq.push(5); //{5}
     pq.push(2); //{5,2}
     pq.push(8); //{8,5,2}
@@ -169,7 +171,7 @@ void explainPQ() {
     //size swap empty fuction same as stack
 
     //Minimum Heap
-    priority_queue<int, vectot<int>, greater<int>> pq;
+    priority_queue<int, vector<int>, greater<int>> pq;
     pq.push(5); //{5}
     pq.push(2); //{2,5}
     pq.push(8); //{2,5,8}
