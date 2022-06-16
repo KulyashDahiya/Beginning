@@ -336,6 +336,17 @@ void explainExtra() {
     
 }
 
+void explainLowerUpperBound() { //Binary Search STL
+
+    a[] = {1,4,5,6,9,9};
+    
+    int ind = lower_bound(a, a+n, 4) - a;
+    int ind = upper_bound(a, a+n, 4) - a;
+
+    int ind = upper_bound(a.begin(), a.end(), x) - a.begin(); //for vector
+    
+}
+
 int main(){
     cout<< "Hello World" <<endl ;
     return 0;
