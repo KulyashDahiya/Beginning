@@ -307,8 +307,33 @@ bool comp(pair<int,int>p1, pair<int,int>p2) {
 }
 
 void explainExtra() {
-    sort(a+2, a+4);
-    sort(a, a+n, greater<int>);
+    sort(a, a+n);
+    sort(v.begin(), v.end());
+    
+    sort(a, a+n, greater<int>); //sort in descending order
+
+    //Sorting in My Way
+    pair<int, int> a[] = {{1,2}, {2,1}, {4,1}};
+    //sort it according to second element
+    //if second element is same, then sort
+    //it according to first element but in decending
+    sort(a, a+n, comp);
+
+    //STL - builtin_popcount(); and builtin_popcountll();
+    int sum = 7;
+    int cnt = __builtin_popcount(); //returns 3
+
+    long long num = 165786578687;
+    int cnt = __builtin_popcountll();
+
+    string s = "123"; //123,132,213,231,312,321, null //start from sorted 123
+    do {
+        cout << s << endl;
+    } while(next_permutation(s.begin(), s.end()));
+
+    int maxi = *max_element(a, a+n);
+    int mini = *min_element(a, a+n);
+    
 }
 
 int main(){
