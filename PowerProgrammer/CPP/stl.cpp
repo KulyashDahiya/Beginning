@@ -2,7 +2,7 @@
 using namespace std;
 
 //Pairs
-void explainPari(){
+void explainPair(){
     pair<int, int> p = {1,3};
     cout << p.first << " " << p.second;
     pair<int, pair<int, int>> p1 = {1, {3,4}};
@@ -310,7 +310,7 @@ void explainExtra() {
     sort(a, a+n);
     sort(v.begin(), v.end());
     
-    sort(a, a+n, greater<int>); //sort in descending order
+    sort(a, a+n, greater<int>()); //sort in descending order
 
     //Sorting in My Way
     pair<int, int> a[] = {{1,2}, {2,1}, {4,1}};
