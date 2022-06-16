@@ -1,4 +1,4 @@
-#include<stdc++.h>
+#include<stdc++.h> //All in Log(n) complexity
 
 // First Occurrence Of X in a sorted array, print -1 if not exist
 
