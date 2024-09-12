@@ -15,7 +15,7 @@ class Solution:
     def pathSum(self, root: Optional[TreeNode], targetSum: int) -> int:
         def dfs(root, current_sum):
             if not root:
-                return 0
+                return
 
             current_sum += root.val
 
