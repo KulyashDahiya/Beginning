@@ -7,7 +7,6 @@
 # @lc code=start
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
-
         if not nums:
             return 0
 
@@ -20,5 +19,6 @@ class Solution:
 
         return j
 
+        
 # @lc code=end
 
