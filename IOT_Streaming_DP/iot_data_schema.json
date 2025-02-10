@@ -1,0 +1,8 @@
+[
+  { "name": "device_id", "type": "INTEGER", "mode": "REQUIRED" },
+  { "name": "temperature", "type": "FLOAT", "mode": "NULLABLE" },
+  { "name": "humidity", "type": "INTEGER", "mode": "NULLABLE" },
+  { "name": "wind_speed", "type": "FLOAT", "mode": "NULLABLE" },
+  { "name": "pressure", "type": "FLOAT", "mode": "NULLABLE" },
+  { "name": "timestamp", "type": "TIMESTAMP", "mode": "NULLABLE" }
+]
